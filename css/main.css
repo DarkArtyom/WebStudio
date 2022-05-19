@@ -109,8 +109,14 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 /* --------------backdrop------------- */
@@ -531,20 +537,42 @@ body {
 }
 
 .adv-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: -30px;
+}
+@media screen and (min-width: 768px) {
+  .adv-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .adv-item {
-  max-width: 270px;
-  margin-right: var(--list-right-margin);
+  max-width: 450px;
+  margin-bottom: 30px;
 }
-.adv-item:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .adv-item {
+    max-width: 354px;
+    margin-right: var(--list-right-margin);
+  }
+  .adv-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .adv-item {
+    max-width: 270px;
+    margin-right: var(--list-right-margin);
+  }
+  .adv-item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .adv-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .adv-icon-box {
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   display: flex;
@@ -555,9 +583,9 @@ body {
 
 .adv-title {
   font-size: 14px;
-  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
+  margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
