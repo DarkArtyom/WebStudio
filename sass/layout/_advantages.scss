@@ -7,8 +7,11 @@
 }
 
 .adv-item {
-  max-width: 450px;
+  width: 100%;
   margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
   @media screen and (min-width: 768px) {
     max-width: 354px;
     margin-right: var(--list-right-margin);
@@ -28,12 +31,15 @@
   }
 }
 .adv-icon-box {
-  height: 120px;
+  height: 100%;
   background-color: #f5f4fa;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    height: 120px;
+  }
 }
 
 .adv-title {
