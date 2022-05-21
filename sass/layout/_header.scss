@@ -12,19 +12,24 @@
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
-  text-decoration: none;
+  padding: 16px 0 16px 15px;
   align-items: center;
-  margin-right: 93px;
-  font-family: "Raleway";
-
-  .logo__studio {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.1;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 93px;
+    font-family: "Raleway";
   }
+}
+
+.logo__studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
 }
 
 .logo__web {
@@ -40,32 +45,43 @@
 }
 
 .navigation__list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .navigation__item {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .navigation__link {
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.1;
-  color: var(--header-link-color);
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--header-link-color);
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--link-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--link-color);
+    }
   }
 }
 
@@ -84,11 +100,43 @@
   color: var(--link-color);
 }
 
+.navigation-button-box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+.navigation__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.navigation__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &:hover {
+    fill: #2196f3;
+  }
+}
+
 /*------header contacts-------*/
 
 .header-contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .header-contacts__item {

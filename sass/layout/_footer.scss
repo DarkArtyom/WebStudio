@@ -5,14 +5,35 @@
 }
 
 .container-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-tab {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.footer-adress {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .address-container {
-  width: 231px;
-  height: 81px;
-  margin-right: 70px;
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+    height: 81px;
+    margin-right: 70px;
+  }
 }
 
 .footer-link-logo {
@@ -21,6 +42,15 @@
   font-family: "Raleway";
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .adress-item {
@@ -81,14 +111,27 @@
 
 /* -------footer join-us ---------*/
 
+.join-us-footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
 .join-us-title {
+  margin-top: 60px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 .join-us-list {
@@ -135,7 +178,15 @@
 }
 
 .footer-form {
-  width: 573px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    width: 575px;
+    display: block;
+    margin-top: 0;
+  }
 }
 
 .label-class {
@@ -148,23 +199,37 @@
 
 .footer-subscribe-case {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+  }
 }
 
 .email-footer {
-  width: 358px;
-  height: 50px;
+  width: 100%;
   padding-left: 16px;
-  margin-top: 20px;
-  margin-right: 11px;
   font-size: 16px;
   line-height: 1.25;
+  margin-top: 20px;
+  margin-bottom: 20px;
   color: rgba(255, 255, 255, 0.6);
   background: #2f303a;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    margin-right: 11px;
+    margin-bottom: 0;
+  }
 }
 
 .button-subscribe {
