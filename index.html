@@ -179,12 +179,30 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                src="./images/face-1.jpg"
-                alt="мужик в очках и рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/face-1.jpg 1x, ./images/face-1-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-1-tab.jpg    1x,
+                    ./images/face-1-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-1-mob.jpg    1x,
+                    ./images/face-1-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/face-1-mob.jpg"
+                  alt="мужик в очках и рубашке"
+                />
+              </picture>
               <div class="team-cards">
                 <h3 class="employee-title">Игорь Демьяненко</h3>
                 <p class="position-team">Product Designer</p>
@@ -221,12 +239,27 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/face-2.jpg"
-                alt="женщина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/face-2.jpg 1x, ./images/face-2-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-2-tab.jpg    1x,
+                    ./images/face-2-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-2-mob.jpg    1x,
+                    ./images/face-2-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img src="./images/face-2-mob.jpg" alt="женщина" />
+              </picture>
               <div class="team-cards">
                 <h3 class="employee-title">Ольга Репина</h3>
                 <p class="position-team">Frontend Developer</p>
@@ -263,12 +296,30 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/face-3.jpg"
-                alt="мужик в белой рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/face-3.jpg 1x, ./images/face-3-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-3-tab.jpg    1x,
+                    ./images/face-3-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-3-mob.jpg    1x,
+                    ./images/face-3-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/face-3-mob.jpg"
+                  alt="мужик в белой рубашке"
+                />
+              </picture>
               <div class="team-cards">
                 <h3 class="employee-title">Николай Тарасов</h3>
                 <p class="position-team">Marketing</p>
@@ -305,12 +356,31 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                src="./images/face-4.jpg"
-                alt="мужик в очках и футболке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="./images/face-4.jpg 1x, ./images/face-4-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-4-tab.jpg    1x,
+                    ./images/face-4-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/face-4-mob.jpg    1x,
+                    ./images/face-4-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  src="./images/face-4-mob.jpg"
+                  alt="мужик в очках и футболке"
+                />
+              </picture>
+
               <div class="team-cards">
                 <h3 class="employee-title">Михаил Ермаков</h3>
                 <p class="position-team">UI Designer</p>
