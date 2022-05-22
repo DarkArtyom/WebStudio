@@ -41,8 +41,8 @@
             </li>
           </ul>
         </nav>
-        <div class="navigation-button-box">
-          <button type="" class="navigation__button">
+        <div class="navigation-button-mobile">
+          <button type="button" class="mobile__button">
             <svg class="navigation__icon" width="24" height="16">
               <use href="./images/icons.svg#icon-mob-menu"></use>
             </svg>
@@ -69,6 +69,61 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu is-hidden">
+        <div class="container">
+          <button type="button" class="menu-btn__close">X</button>
+          <div class="mob-menu-top">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link link">Портфолио</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-contacts">
+            <ul class="header-mob-contacts list">
+              <li class="header-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="header-mob-contacts__tel link"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-mob-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-mob-contacts__mail link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Instagram </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Twitter </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Facebook </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -664,5 +719,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
