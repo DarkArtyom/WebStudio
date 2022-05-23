@@ -40,6 +40,13 @@
             </li>
           </ul>
         </nav>
+        <div class="navigation-button-mobile">
+          <button type="button" class="mobile__button">
+            <svg class="navigation__icon" width="24" height="16">
+              <use href="./images/icons.svg#icon-mob-menu"></use>
+            </svg>
+          </button>
+        </div>
         <ul class="header-contacts list">
           <li class="header-contacts__item">
             <a
@@ -61,6 +68,61 @@
             >
           </li>
         </ul>
+      </div>
+      <div class="mobile-menu is-hidden">
+        <div class="container">
+          <button type="button" class="menu-btn__close">X</button>
+          <div class="mob-menu-top">
+            <ul class="menu__list list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link link">Студия</a>
+              </li>
+              <li class="menu__item">
+                <a href="./portfolio.html" class="menu__link link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-contacts">
+            <ul class="header-mob-contacts list">
+              <li class="header-contacts__item">
+                <a
+                  href="tel:+380961111111"
+                  class="header-mob-contacts__tel link"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="header-mob-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-mob-contacts__mail link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Instagram </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Twitter </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">Facebook </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -126,7 +188,7 @@
                 </div>
                 <div class="portfolio-cards">
                   <h2 class="sevices-title">Технокряк</h2>
-                  <p class="services-text">Веб-сайт</p>
+                  <p class="services-text first-card">Веб-сайт</p>
                 </div>
               </a>
             </li>
@@ -498,94 +560,96 @@
         </div>
       </section>
     </main>
-  </body>
-  <footer class="footer">
-    <div class="container-footer container">
-      <div class="footer-tab">
-        <div class="footer-adress">
-          <a href="./index.html" class="footer-link-logo link"
-            ><span class="logo__web">Web</span
-            ><span class="logo-studio-footer">Studio</span></a
-          >
-          <address class="address-container">
-            <ul class="address-list list">
-              <li class="adress-item">
-                <a
-                  href="https://goo.gl/maps/8bVCaFrBpP2hShio7"
-                  target="_blank"
-                  class="footer-map-link link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+
+    <footer class="footer">
+      <div class="container-footer container">
+        <div class="footer-tab">
+          <div class="footer-adress">
+            <a href="./index.html" class="footer-link-logo link"
+              ><span class="logo__web">Web</span
+              ><span class="logo-studio-footer">Studio</span></a
+            >
+            <address class="address-container">
+              <ul class="address-list list">
+                <li class="adress-item">
+                  <a
+                    href="https://goo.gl/maps/8bVCaFrBpP2hShio7"
+                    target="_blank"
+                    class="footer-map-link link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a href="mailto:info@devstudio.com" class="footer-mail link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress-item">
+                  <a href="tel:+380961111111" class="footer-tel link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join-us-footer">
+            <p class="join-us-title">Присоединяйтесь</p>
+            <ul class="join-us-list list">
+              <li class="join-us-item">
+                <a href="" class="join-us-link link">
+                  <svg class="join-us-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item">
-                <a href="mailto:info@devstudio.com" class="footer-mail link"
-                  >info@devstudio.com</a
-                >
+              <li class="join-us-item">
+                <a href="" class="join-us-link link">
+                  <svg class="join-us-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="adress-item">
-                <a href="tel:+380961111111" class="footer-tel link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="join-us-item">
+                <a href="" class="join-us-link link">
+                  <svg class="join-us-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us-item">
+                <a href="" class="join-us-link link">
+                  <svg class="join-us-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="join-us-footer">
-          <p class="join-us-title">Присоединяйтесь</p>
-          <ul class="join-us-list list">
-            <li class="join-us-item">
-              <a href="" class="join-us-link link">
-                <svg class="join-us-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+        <div class="subsсribe-footer">
+          <form class="footer-form">
+            <label for="footer-label" class="label-class"
+              >Подпишитесь на рассылку
+            </label>
+            <span class="footer-subscribe-case">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                id="footer-label"
+                class="email-footer"
+                required
+              />
+              <button type="submit" class="button-subscribe">
+                Подписаться<svg class="submit-icon">
+                  <use href="./images/icons.svg#icon-icon-plane"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="join-us-item">
-              <a href="" class="join-us-link link">
-                <svg class="join-us-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-us-item">
-              <a href="" class="join-us-link link">
-                <svg class="join-us-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-us-item">
-              <a href="" class="join-us-link link">
-                <svg class="join-us-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              </button>
+            </span>
+          </form>
         </div>
       </div>
-      <div class="subsсribe-footer">
-        <form class="footer-form">
-          <label for="footer-label" class="label-class"
-            >Подпишитесь на рассылку
-          </label>
-          <span class="footer-subscribe-case">
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              id="footer-label"
-              class="email-footer"
-              required
-            />
-            <button type="submit" class="button-subscribe">
-              Подписаться<svg class="submit-icon">
-                <use href="./images/icons.svg#icon-icon-plane"></use>
-              </svg>
-            </button>
-          </span>
-        </form>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>
