@@ -36,6 +36,7 @@
 }
 
 .modal-button {
+  display: block;
   position: absolute;
   top: 11px;
   right: 8px;
@@ -49,9 +50,15 @@
 }
 
 .icon-Vector {
+  width: 11px;
+  height: 11px;
   fill: #000000;
   .modal-button:hover &,
   .modal-button:focus & {
+    fill: #2196f3;
+  }
+  .menu-btn__close:hover &,
+  .menu-btn__close:focus & {
     fill: #2196f3;
   }
 }
@@ -133,15 +140,16 @@
 }
 
 .checkbox-policy {
-  width: 423px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 13px;
+  @media screen and (min-width: 1200px) {
+    width: 423px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+  }
 }
-
 .check-text {
   display: flex;
   align-items: center;
@@ -183,10 +191,13 @@
 }
 
 .policy {
-  margin-left: 3px;
+  margin-left: 21px;
   line-height: 1.7;
   text-decoration-line: underline;
   color: #2196f3;
+  @media screen and (min-width: 1200px) {
+    margin-left: 3px;
+  }
 }
 
 .modal-submit-button {

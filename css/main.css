@@ -160,6 +160,7 @@ body {
 }
 
 .modal-button {
+  display: block;
   position: absolute;
   top: 11px;
   right: 8px;
@@ -173,9 +174,14 @@ body {
 }
 
 .icon-Vector {
+  width: 11px;
+  height: 11px;
   fill: #000000;
 }
 .modal-button:hover .icon-Vector, .modal-button:focus .icon-Vector {
+  fill: #2196f3;
+}
+.menu-btn__close:hover .icon-Vector, .menu-btn__close:focus .icon-Vector {
   fill: #2196f3;
 }
 
@@ -256,13 +262,17 @@ body {
 }
 
 .checkbox-policy {
-  width: 423px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-left: 13px;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-policy {
+    width: 423px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+  }
 }
 
 .check-text {
@@ -308,10 +318,15 @@ body {
 }
 
 .policy {
-  margin-left: 3px;
+  margin-left: 21px;
   line-height: 1.7;
   text-decoration-line: underline;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .policy {
+    margin-left: 3px;
+  }
 }
 
 .modal-submit-button {
@@ -617,9 +632,6 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}
-.menu-btn__close:hover {
-  color: #2196f3;
 }
 
 .menu__item:not(:last-child) {
@@ -1114,6 +1126,7 @@ body {
   .footer-tab {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -1313,6 +1326,7 @@ body {
 }
 
 .email-footer {
+  height: 40px;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;

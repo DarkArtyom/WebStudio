@@ -15,6 +15,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
   }
 }
 
@@ -209,6 +210,7 @@
 }
 
 .email-footer {
+  height: 40px;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
