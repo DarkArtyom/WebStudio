@@ -245,6 +245,7 @@
   padding-left: 40px;
   padding-right: 15px;
   transition: opacity 300ms, visibility 300ms;
+  overflow: auto;
   .container {
     display: flex;
     overflow-y: auto;
